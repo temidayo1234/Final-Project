@@ -1,0 +1,58 @@
+body {
+    background-color: #054375;
+  }
+  /* html {
+    background: url(https://wallpaperset.com/w/full/8/4/e/488828.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  } */
+#button{background-color: green; font-size: 25px;cursor: pointer;}
+h2 {text-align: center;}
+
+h3 {text-align: center;}
+
+.center {
+    text-align: center;
+  }
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    text-align: center;
+  }
+  
+li {
+    float: left;
+  }
+  
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+li a:hover {
+    background-color: rgb(64, 219, 247);
+  }
+
+.bar {
+    fill: green;
+  }
+  
+.bar:hover {
+    fill: red;
+  }
+  
+.form.group.impact {
+    font-family: Impact, Charcoal, sans-serif;
+    font-size: 30px;
+  }
+
+.call {
+    font: 30px sans-serif;
+  }
