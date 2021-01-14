@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Violent Crime Predictor</title>
+	<link rel="stylesheet" type="text/css" href="static/css/style.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<style>
+		html {
+			/*background: url(https://wallpaperset.com/w/full/9/a/2/134056.jpg);
+			background-size: cover;
+			background-repeat: no-repeat;*/
+			background-color: #f1c650;
+     		padding: 25px;
+		}
+
+	</style>
+</head>
+
+<body>
+
+	<div class="jumbotron center">
+		<h1 class="display-5">Welcome to T&T Predictive Analytics Violent Crime Predictor Machine</h1>
+		<h3></h3>
+		<h3></h3>
+		<h3 class="display-5">Please enter the information below to get the violent crime prediction for any city of your choice.</h3>
+		<h3></h3>
+		<h3></h3>
+		<h5 class="display-5">Please ensure that you do not add any commas or decimal points.</h5>
+	</div>
+	<div class="login">
+		<form action="{{ url_for('predict') }}" method="POST">
+		  <div class="form-group">
+			<h4>Number of People in the City with High School Degree as Highest completed Education</h4>
+			<input
+			  type="text"
+			  name="high_school"
+			  placeholder=" "/>
+			  <h4>Number of People in the City with Bachelor Degree as Highest completed Education</h4>
+			<input
+			  type="text"
+			  name="bachelors"
+			  placeholder=" "/>			  
+			<h4>Number of Never Married People in the City</h4>
+			<input
+			  type="text"
+			  name="never_married"
+			  placeholder=" "/>
+			<h4>Number of Married People in the City</h4>
+			<input
+			  type="text"
+			  name="married"
+			  placeholder=" "/>
+			  <h4>Number of Males in the City</h4>
+			<input
+			  type="text"
+			  name="male"
+			  placeholder=" "/>
+			  <h4>Number of Black People in the City</h4>
+			<input
+			  type="text"
+			  name="black"
+			  placeholder=" "/>
+			  <h4>Number of Hispanic/Latino People in the City</h4>
+			<input
+			  type="text"
+			  name="hispanic_latino"
+			  placeholder=" "/>
+			  <h4>Number of White People in the City</h4>
+			<input
+			  type="text"
+			  name="white"
+			  placeholder=" "/>
+			<h4>Number of Unemployed People in the City</h4>
+			<input
+			  type="text"
+			  name="unemployment"
+			  placeholder=" "/>
+			<h4>Number of Students Currently in High School in the City</h4>
+			<input
+			  type="text"
+			  name="high"
+			  placeholder=" "/>
+			
+		  </div>
+		  <input type="submit" value="Predict" class="btn btn-primary btn-block btn-medium" />
+		</form>
+	  </div>
+
+	  <footer class="container-fluid text-center">
+		<p>T&T Predictive Analytics &copy;2021</p>
+	  </footer>
+	<script src="https://d3js.org/d3.v5.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.7.1/d3-tip.min.js"></script>
+</body>
+
+</html>
