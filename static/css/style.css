@@ -1,11 +1,7 @@
 body {
     background-color: #054375;
   }
-  /* html {
-    background: url(https://wallpaperset.com/w/full/8/4/e/488828.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-  } */
+ 
 #button{background-color: green; font-size: 25px;cursor: pointer;}
 h2 {text-align: center;}
 
