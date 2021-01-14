@@ -13,6 +13,7 @@ numpy = "*"
 scikit-learn = "*"
 xgboost = "*"
 pandas = "*"
+cython = "*"
 
 [dev-packages]
 
