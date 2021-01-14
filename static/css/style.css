@@ -39,20 +39,9 @@ li a {
 li a:hover {
     background-color: rgb(64, 219, 247);
   }
-
-.bar {
-    fill: green;
-  }
-  
-.bar:hover {
-    fill: red;
-  }
   
 .form.group.impact {
     font-family: Impact, Charcoal, sans-serif;
-    font-size: 30px;
+    font-size: 20px;
   }
 
-.call {
-    font: 30px sans-serif;
-  }
